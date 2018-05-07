@@ -1,0 +1,18 @@
+This is the first homework of neural network.
+It's required to solve the XOR question by the BPN network
+The algorith is on the slide of this class
+
+I use the 2 2 1 structure.
+In Input and Hidden layer, a bias is added.
+(which means it's a 3 3 1 structure)
+The Sigmoid function was used as the activation function.
+
+This homework was coded by C++ and Python.
+The result shows at most situation, the network trained fail and gave a wrong result,but sometimes it would work.
+
+Useage:
+Python:
+with python version 3 and numpy libery
+python3 BPN_XOR.py
+ 
+ 
