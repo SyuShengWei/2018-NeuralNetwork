@@ -220,17 +220,14 @@ int main (){
 		}
 		epcho_ctr+=1;
 		error_avg = error_sum /(2*4);
-		cout<<"epcho : "<< epcho_ctr<<" error_ave : " <<error_avg<<endl;
+		if(epcho_ctr % 1000 == 0)
+			cout<<"epcho(per 1000 times) : "<< epcho_ctr<<" error_ave : " <<error_avg<<endl;
 	}
 
 	for(int k = 0 ; k < 4 ; k++){
 		bpn->forward(X[k]);
 		cout<<"X : "<<X[k][0]<<" , "<< X[k][1]<<", D : "<<D[k]<<", Y(BPN) : "<<bpn->getSYj()<<endl;
 	}
-
-
-
-
-	//cout<<sigmoid(1);
+	
 	return 0;
 }
